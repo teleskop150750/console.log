@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page__body {
+  font-family: sans-serif;
+  background-color: #f1f1f1;
+}
+
+.span-result-wrapper {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.span-result-wrapper:nth-child(even){
+  background-color: #bee2e7;
+}
+.span-result-wrapper:nth-child(odd){
+  background-color: #bee7c4;
+}
+
+.span-result {
+  display: inline-block;
+  padding: 6px 10px;
+}
