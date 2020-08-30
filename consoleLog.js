@@ -25,6 +25,7 @@ const template = (resultData) => {
   span.textContent = resultStrig;
   span.style.cssText = `display: inline-block;
   padding: 6px 10px;
+  font-size: 1.3rem;
   white-space: pre-wrap;`;
   span.classList.add('span-result');
 
