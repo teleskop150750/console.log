@@ -4,8 +4,10 @@ const template = (resultData) => {
   resultData.forEach((el) => {
     if (Array.isArray(el)) {
       resultStrig += `[${el.join(', ')}] `;
-    } else if (typeof el == 'object') {
-      const entries = Object.entries(el).reduce((acc, [key, value]) => acc + `  ${key}: ${value},\n`, '');
+    } else if (el === null) {
+      resultStrig += 'null';
+    } else if (typeof el === 'object') {
+      const entries = Object.entries(el).reduce((acc, [key, value]) => `${acc}  ${key}: ${value},\n`, '');
       resultStrig += `\n{\n${entries}}\n`;
     } else {
       resultStrig += `${el} `;
